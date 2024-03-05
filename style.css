@@ -214,8 +214,8 @@ main img{
 }
 
 .opcion-botones .boton-perfil, .opcion-botones .boton-chat, .opcion-botones .boton-alquiler{
-    width: 20vw;
-    height: 20vw;
+    width: 30vw;
+    height: 30vw;
 }
 
 .opcion-botones ul:first-child {
@@ -226,7 +226,7 @@ main img{
 .opcion-botones h2{
     color: aliceblue;
     font-family: inter;
-    font-size: 3vw;
+    font-size: 4.5vw;
 }
 
 .descripcion{
@@ -537,7 +537,7 @@ footer{
     
     .opciones h2{
         font-family: inter;
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
     
