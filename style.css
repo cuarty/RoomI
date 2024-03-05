@@ -30,7 +30,7 @@ html, body{
     width: 20vw;
 }
 
-nav a{
+.encabezado nav a{
     font-size: 1.5vw;
     font-family: Inter;
     color: #ffffff;
@@ -109,6 +109,14 @@ main img{
     border-radius: 3vw;
 }
 
+.titulo h3{
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 2.5vw;
+    font-family: inter;
+    margin: 1vw;
+}
+
 .video-background {
     position: relative;
     width: 100%;
@@ -147,15 +155,6 @@ main img{
     font-size: 1.5vw;
 }
 
-.titulo h3{
-    color: whitesmoke;
-    font-style: italic;
-    font-size: 2.5vw;
-    font-family: inter;
-    margin: 1vw;
-}
-
-
 
 .botones li{
     display: inline-block;
@@ -169,7 +168,7 @@ main img{
 
 
 .boton-perfil{
-    background-image: url(img/icono-perfil-verde.png);
+    background-image: url(img/icono-perfil-azul.png);
     background-size: cover;
     background-color: transparent;
     width: 8vw;
@@ -183,7 +182,7 @@ main img{
 }
 
 .boton-chat{
-    background-image: url(img/icono-chat-verde.png);
+    background-image: url(img/icono-chat-azul.png);
     background-size: cover;
     background-color: transparent;
     width: 8vw;
@@ -197,7 +196,7 @@ main img{
 }
 
 .boton-alquiler{
-    background-image: url(img/icono-alquiler-verde.png);
+    background-image: url(img/icono-alquiler-azul.png);
     background-size: cover;
     background-color: transparent;
     width: 7vw;
@@ -210,6 +209,26 @@ main img{
     animation-duration: 2s;
 }
 
+.opcion-botones{
+    display: none;
+}
+
+.opcion-botones .boton-perfil, .opcion-botones .boton-chat, .opcion-botones .boton-alquiler{
+    width: 20vw;
+    height: 20vw;
+}
+
+.opcion-botones ul:first-child {
+    text-align: center; 
+    margin-top: 4vw;
+}
+
+.opcion-botones h2{
+    color: aliceblue;
+    font-family: inter;
+    font-size: 3vw;
+}
+
 .descripcion{
     color: #d3d0d0;
     font-size: 1.5vw;
@@ -217,43 +236,12 @@ main img{
     margin-top: 1vw;
 }
 
-.carrousel ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carrousel li{
-    display: inline-block;
-    width: 45%;
-    text-align: center;
-    vertical-align: center;
-    padding: 2vw 1.5vw;
-    box-sizing: border-box;
-}
-
-.cuadro{
-    background: linear-gradient(to bottom, #000003, #388292);
-    margin: 8vw auto;
-    width: 95%;
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.8);
-}
-
-.titulo-cuadro{
-    margin: 0 10vh;
-}
-
-.imagen-titulo-cuadro{
-    display: inline-block;
-    width: 10vw;
-}
-
 .titulo1{
     text-align: center;
     background-color: #355662;
     margin: 0 2vw;
     margin-bottom: 1vw;
-    border: 5px solid rgb(54, 220, 232);
+    border: 0.5vw solid rgb(54, 220, 232);
     border-radius: 30px;
 }
 
@@ -262,7 +250,7 @@ main img{
 }
 
 .titulo1 p{
-    animation: backInLeft;
+    animation: zoomIn;
     animation-duration: 2s;
     margin: 0 auto 3vw;
     width: 80%;
@@ -342,13 +330,12 @@ main img{
     display: none;
 }
 
-
 .titulo-cuadro{
-    padding: 5vw 0;
+    padding-top: 8vw;
+    padding-bottom: 5vw;
 }
 
 .titulo-cuadro h1{
-    padding-top: 3vw;
     text-align: center;
     color: beige;
     font-family: inter;
@@ -512,6 +499,19 @@ footer{
         display: none;
     } */
 
+    .encabezado img{
+        width: 30vw;
+    }
+
+    .encabezado nav a{
+        font-size: 3vw;
+        margin-right: 1vw;
+    }
+
+    .encabezado nav img{
+        width: 8vw;
+    }
+
     .contenedor-imagen-web{
         display: none;
     }
@@ -523,5 +523,93 @@ footer{
     #imagen-cel{
         display: block;
     }
+
+    .titulo h3{
+        font-size: 4vw;
+        margin: 1vw;
+    }
+
+    .opciones h1{
+        font-family: inter;
+        font-size: 6vw;
+        padding-bottom: 2vw;
+    }
+    
+    .opciones h2{
+        font-family: inter;
+        font-size: 3vw;
+    }
+    
+    
+    .botones{
+        display: none;
+    }
+
+    .opcion-botones{
+        display: inline-block;
+        margin-top: 10vw;
+        width: 100%;
+    }
+
+    .opcion-botones li{
+        margin: 0 auto;
+    }
+
+    .titulo-cuadro{
+        padding-top: 15vw;
+        padding-bottom: 5vw;
+    }
+    
+    .titulo-cuadro h1{
+        font-size: 4vw;
+    }
+
+    .titulo1 p{
+        font-size: 4vw;
+    }
+
+    .boton-abrir-cerrar button{
+        width: 80%;
+        height: 10vw;
+    }
+
+    #b1a{
+        background-image: url(img/boton1-A-cel.png);
+        display: inline;
+    }
+    
+    #b1b{
+        background-image: url(img/boton1-B-cel.png);
+        display: none;
+    }
+    
+    #b2a{
+        background-image: url(img/boton2-A-cel.png);
+        display: inline;
+    }
+    
+    #b2b{background-image: url(img/boton2-B-cel.png);
+        display: none;
+    }
+    
+    #b3a{
+        background-image: url(img/boton3-A-cel.png);
+        display: inline;
+    }
+    
+    #b3b{background-image: url(img/boton3-B-cel.png);
+        display: none;
+    }
+    
+    #b4a{
+        background-image: url(img/boton4-A-cel.png);
+        display: inline;
+    }
+    
+    #b4b{background-image: url(img/boton4-B-cel.png);
+        display: none;
+    }
+    
+
     
 }
